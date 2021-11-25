@@ -1,0 +1,238 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  
+}
+
+.bg-light{
+    background-color: rgba(36, 38, 37, 0.9) !important;
+}
+.nav-item >a{
+    font-size:25px ;
+    font-family: 'Lato', sans-serif !important;
+    color: white !important;
+    font-weight: 400 !important;
+} 
+.carousel-control-next, .carousel-control-prev {
+width: 5% !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+height: 40px !important;
+width: 40px !important;
+}
+.booking-div{
+position: absolute;
+width: 450px;
+background-color: white;
+top: 150px;
+left: 8%;
+z-index: 100;
+padding: 1%;
+padding-top: 2%;
+padding-bottom: 2%;
+border-radius: 15px;
+font-family: 'Lato', sans-serif;
+}
+.booking-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.booking-content >input{
+    width: 70%;
+    margin-bottom: 10px;
+    height: 45px;
+    padding: 10px;
+}
+
+.booking-content >button{
+width: 70%;
+height: 45px;
+background-color: #e83f53;
+border: 2px solid #e83f53;
+color: white;
+font-size: 22px;
+font-family:  'Lato', sans-serif;
+}
+.booking-content h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.section2-block{
+    display: flex;
+    padding: 5%;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.block-content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  gap: 3px;
+  border-right: 3px solid #ebebeb;
+  padding: 1%;
+}
+.block-content:last-child{
+    border: none;
+}
+.block-content h2{
+font-size: 30px;
+font-family: 'Archivo', sans-serif;
+}
+.block-content i{
+    font-size:50px ;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #40c1b9;
+    color: white;
+    border-radius: 30px;
+    line-height: 90px;
+}
+.block-content i:hover{
+    background-color: white;
+    color: #40c1b9 ;
+    border: 5px solid #40c1b9;
+}
+.destination-row{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    gap: 20px;
+}
+.destination-content{
+display: flex;
+gap: 20px;
+}
+
+.btn-destination{
+width: 400px;
+height: 80px;
+border-radius: 10px;
+background-color: #e83f53;
+border: 2px solid #e83f53;
+color: white;
+font-size: 25px;
+}
+.btn-destination:hover{
+    background-color:#e83f53e7;
+    border: 2px solid #e83f53e7;
+}
+.destination-section h1{
+color: white;
+font-family: 'lato', sans-serif;
+}
+.destination-section{
+    background-color: rgba(36, 38, 37, 0.9);
+    padding: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- responsives ---------  */
+@media (max-width:1316px){
+    .booking-div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 0%;
+        left: 0%;
+        z-index: 0;
+        padding: 2%;
+        margin-top: 10px;
+       margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 0 12px rgba(0,0,0,0.09));
+    background-color: #ffffff;
+    }
+    .booking-content >input{
+    width: 200px;
+    }
+    .booking-content{
+        display: flex;
+       
+        gap: 5px;
+    }
+}
+@media (max-width:768px){
+    .section2-block {
+    display: flex;
+    flex-direction: column;
+    }
+    .block-content{
+border: none;
+    }
+    .p-3 {
+     padding: 0px !important;
+    }
+    .navbar-brand>img{
+        width: 150px !important;
+        height: 40px !important;
+    }
+    .destination-row{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 20px;
+       text-align: center;
+       align-content: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .destination-row h1{
+        font-size: 30px;
+    }
+    .btn-destination{
+font-size: 18px;
+max-width: 300px;
+justify-content: center;
+
+    }
+}
+@media (max-width:425px){
+    .destination-content{
+       display: flex;
+       flex-direction: column;
+    }
+}
+@media (max-width:375px){
+    .booking-content {
+       padding:auto ;
+       margin: auto;
+       display: flex;
+    }
+    .booking-div {
+padding:0px ;
+margin: 0px;
+width: 100%;
+    }
+
+    .booking-content h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
